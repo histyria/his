@@ -1,0 +1,134 @@
+{% extends 'base2.html' %}
+
+{% block breadcrumb %}
+<br>
+<div class="container m-3">
+    <div class="row">
+        <div class=" col-12">
+
+            <ol class="breadcrumb dark-bg">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+
+            </ol>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+{% block content %}
+{% include 'welcom.html' %}
+
+<section class="light-bg">
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="margin-bottom-medium text-center ">
+                <h1 class="text-weight-700 text-uppercase"> Quick Access</h1>
+                <div class="separator"><span class="short-line"></span><i class="fa fa-circle-o"></i><i
+                        class="fa fa-circle"></i><i class="fa fa-circle-o"></i><span class="short-line"></span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="col-md-3 col-sm-6 service text-center dark">
+        <a href="{% url 'HOME:post_patiant' %}">
+            <div class="service-icon big">
+                <i class="fa fa-wpforms"></i>
+            </div>
+        </a>
+        <div class="separator"><i class="short-line"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i><i
+                class="fa fa-circle-o"></i><span class="short-line"></span></div>
+        <div class="service-text">
+            <h4 class="text-uppercase text-weight-600"><a href="{% url 'HOME:post_patiant' %}">ER Reception </a></h4>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 service text-center base">
+        <a href="#">
+            <div class="service-icon big">
+                <i class="fa fa-users"></i>
+            </div>
+        </a>
+        <div class="separator"><i class="short-line"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i><i
+                class="fa fa-circle-o"></i><span class="short-line"></span></div>
+        <div class="service-text">
+            <h4 class="text-uppercase text-weight-600"><a href="#"> Patient Information Record</a></h4>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 service text-center dark">
+        <a href="#">
+            <div class="service-icon big">
+                <i class="fa fa-stethoscope"></i>
+            </div>
+        </a>
+        <div class="separator"><i class="short-line"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i><i
+                class="fa fa-circle-o"></i><span class="short-line"></span></div>
+        <div class="service-text">
+            <h4 class="text-uppercase text-weight-600"><a href="#">ER Nurse Station</a></h4>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 service text-center base">
+        <a href="#">
+            <div class="service-icon big">
+                <i class="fa fa-heartbeat"></i>
+            </div>
+        </a>
+        <div class="separator"><i class="short-line"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i><i
+                class="fa fa-circle-o"></i><span class="short-line"></span></div>
+        <div class="service-text">
+            <h4 class="text-uppercase text-weight-600"><a href="#">Visual Triage</a></h4>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 service text-center dark">
+        <a href="#">
+            <div class="service-icon big">
+                <i class="fa fa-user-md"></i>
+            </div>
+        </a>
+        <div class="separator"><i class="short-line"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i><i
+                class="fa fa-circle-o"></i><span class="short-line"></span></div>
+        <div class="service-text">
+            <h4 class="text-uppercase text-weight-600"><a href="#">ER Patient Clinics</a></h4>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 service text-center base">
+        <a href="#">
+            <div class="service-icon big">
+                <i class="fa fa-fas fa-x-ray"></i>
+            </div>
+        </a>
+        <div class="separator"><i class="short-line"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i><i
+                class="fa fa-circle-o"></i><span class="short-line"></span></div>
+        <div class="service-text">
+            <h4 class="text-uppercase text-weight-600"><a href="#">Radiology</a></h4>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 service text-center dark">
+        <a href="#">
+            <div class="service-icon big">
+                <i class="fa fa-bed"></i>
+            </div>
+        </a>
+        <div class="separator"><i class="short-line"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle"></i><i
+                class="fa fa-circle-o"></i><span class="short-line"></span></div>
+        <div class="service-text">
+            <h4 class="text-uppercase text-weight-600"><a href="#">Admission</a></h4>
+            </p>
+        </div>
+    </div>
+
+
+</div>
+
+</section>
+{% endblock %}

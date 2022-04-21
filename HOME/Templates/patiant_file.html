@@ -1,0 +1,101 @@
+{% extends 'base2.html' %}
+
+{% block breadcrumb %}
+<br>
+<div class="container m-3">
+    <div class="row">
+        <div class=" col-12">
+
+            <ol class="breadcrumb dark-bg">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+
+            </ol>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+{% block content %}
+
+
+<section class="light-bg">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="margin-bottom-medium text-center ">
+                    <h1 class="text-weight-700 text-uppercase"> ER_Reception</h1>
+                    <div class="separator"><span class="short-line"></span><i class="fa fa-circle-o"></i><i
+                            class="fa fa-circle"></i><i class="fa fa-circle-o"></i><span class="short-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <form method="post" >
+          {% csrf_token %}
+
+                 <div class="col-md-6 col-sm-6">
+                    {% if form.non_field_errors%}
+                    <div class="alert alert-danger" role="alerts">
+                        {%for error in form.non_field_errors%}
+                        <p {%if forloop.last%} class="mb-0" {%endif%}>{{error}}</p>
+                        {%endfor%}
+                    </div>
+                    {%endif%}
+
+                    {% for field in form %}
+                    <div class="form-group">
+                        {{field.label_tag}}
+
+                        {%if form.is_bound%}
+                        {%if field.errors%}
+
+                        {%for error in field.errors%}
+                        <div class="form-group has-error">
+                            <label class="control-label" for="inputError1">{{error}}</label>
+                            <input type="text" class="form-control" id="inputError1">
+                        </div>
+                        <div class="invalid-feedback"></div>
+
+                        {%endfor%}
+
+                        {%endif%}
+                        {%else%}
+
+                        <div class="form-group has-success">
+                            <label class="control-label" for="inputSuccess1"></label>
+                            <input type="text" class="form-control">
+                        </div>
+
+
+
+
+
+                        {%endif%}
+
+
+                    </div>
+                    {%if field.help_text%}
+                    <small class="form-text text-muted">
+                        {{field.help_text}}
+                    </small>
+                    {%endif%}
+
+                    {% endfor %}
+
+
+                </div>
+
+                <button type="submit"
+                class="btn btn-success text-weight-700 text-uppercase btn-demo-margin-bottom">Success</button>
+        </form>
+    </div>
+    <button type="submit"
+    class="btn btn-success text-weight-700 text-uppercase btn-demo-margin-bottom">Success</button>
+</section>
+{% endblock %}

@@ -1,0 +1,523 @@
+{% extends 'base2.html' %} {% block breadcrumb %}
+<br />
+<div class="container m-3">
+    <div class="row">
+        <div class="col-12">
+            <ol class="breadcrumb dark-bg">
+                <li>
+                    <a href="#"><i class="fa fa-home"></i> Home</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block content %}
+
+<section class="light-bg">
+    <div class="container">
+
+
+    <div class="col-8">
+        <p class="text-black text-left">Add class <code>.base</code></p>
+        <div class="tabs-theme base">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs text-weight-600" role="tablist">
+                <li role="presentation" class="">
+                    <a href="#servicesBase" aria-controls="services" role="tab" data-toggle="tab"
+                        aria-expanded="false">ER_Reception</a>
+                </li>
+                <li role="presentation" class="">
+                    <a href="#Patient_File" aria-controls="profile" role="tab" data-toggle="tab"
+                        aria-expanded="false">Patient File</a>
+                </li>
+                <li role="presentation" class="active">
+                    <a href="#countersBase" aria-controls="counters" role="tab" data-toggle="tab"
+                        aria-expanded="true">Counters</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane" id="servicesBase">
+                    <div class="clearfix">
+                        <div class="col-md-12 service light">
+                            <a href="#">
+                                <div class="service-icon"><i class="fa fa-edit"></i></div>
+                            </a>
+                            <div class="service-text">
+                                <h4 class="text-uppercase text-weight-600">
+                                    <a href="#">easy customizable</a>
+                                </h4>
+                                <p>
+                                    Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                    nihil impedit quo minus id quod maxime.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 service light">
+                            <a href="#">
+                                <div class="service-icon"><i class="fa fa-laptop"></i></div>
+                            </a>
+                            <div class="service-text">
+                                <h4 class="text-uppercase text-weight-600">
+                                    <a href="#">fully responsive</a>
+                                </h4>
+                                <p>
+                                    Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                    nihil impedit quo minus id quod maxime.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Patient_File">
+                    <div class="clearfix">
+                        <div class="col-md-12">
+                            <div class="team text-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="margin-bottom-medium text-center">
+                                                <h1 class="text-weight-700 text-uppercase">
+                                                   Create Patiant File
+                                                </h1>
+                                                <div class="separator">
+                                                    <span class="short-line"></span><i class="fa fa-circle-o"></i><i
+                                                        class="fa fa-circle"></i><i class="fa fa-circle-o"></i><span
+                                                        class="short-line"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <form method="post">
+                                        <div class="row">
+                                            <div class="col-md-10 col-sm-10">
+                                                <input type="hidden" name="csrfmiddlewaretoken"
+                                                    value="HQNipkLYAel47vfJYuhrmfLve9mLvAHSQvGYXs0w1YOSgWX82GTCStKh28I6lsth" />
+
+                                                    <div class="form-group has-success">
+                                                        <label class="control-label" for="inputSuccess1">Input with success</label>
+                                                        <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+
+                                                    </div>
+
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class=" form-group has-success has-feedback">
+                                                        <label for="id_department_code">Department code:</label>
+
+                                                            <input type="text" class="form-control" />
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="id_registration_date">Registration date:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_patiant_no">Patiant no:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="id_ar_patiant_name">Ar patiant name:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_en_patiant_name">En patiant name:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_birth_date">Birth date:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="id_nationality">Nationality:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_place_of_birth">Place of birth:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_sex">Sex:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="id_religion_code">Religion code:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_social_number">Social number:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_mobile_no">Mobile no:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_mother_name">Mother name:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="id_clinec_code">Clinec code:</label>
+
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="id_birth_g_date">Birth g date:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="id_file_status">File status:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="id_file_flag">File flag:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="id_file_type">File type:</label>
+                                                        <div class="form-group has-success">
+                                                            <label class="control-label" for="inputSuccess1"></label>
+                                                            <input type="text" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit"
+                                            class="btn btn-success text-weight-700 text-uppercase btn-demo-margin-bottom">
+                                            Success
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane active" id="countersBase">
+                    <div class="clearfix">
+                        <div class="col-md-12 text-center">
+                            <div class="counter-number">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="margin-bottom-medium text-left">
+                        <h3 class="page-header text-weight-300">Validation states</h3>
+                        <p class="text-black">Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label" for="inputSuccess1">Input with success</label>
+                        <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+
+                    </div>
+                    <div class="form-group has-warning">
+                        <label class="control-label" for="inputWarning1">Input with warning</label>
+                        <input type="text" class="form-control" id="inputWarning1">
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="inputError1">Input with error</label>
+                        <input type="text" class="form-control" id="inputError1">
+                    </div>
+                    <div class="has-success">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="checkboxSuccess" value="option1">
+                                Checkbox with success
+                            </label>
+                        </div>
+                    </div>
+                    <div class="has-warning">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="checkboxWarning" value="option1">
+                                Checkbox with warning
+                            </label>
+                        </div>
+                    </div>
+                    <div class="has-error">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="checkboxError" value="option1">
+                                Checkbox with error
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="margin-bottom-medium text-left">
+                        <h3 class="page-header text-weight-300">With optional icons</h3>
+                        <p class="text-black">You can also add optional feedback icons with the addition of <code>.has-feedback</code> and the right icon.</p>
+                        <p class="text-black"><strong class="text-danger">Feedback icons only work with textual <code>&lt;input class="form-control"&gt;</code> elements.</strong></p>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputSuccess2">Input with success</label>
+                        <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                    </div>
+                    <div class="form-group has-warning has-feedback">
+                        <label class="control-label" for="inputWarning2">Input with warning</label>
+                        <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+                        <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputWarning2Status" class="sr-only">(warning)</span>
+                    </div>
+                    <div class="form-group has-error has-feedback">
+                        <label class="control-label" for="inputError2">Input with error</label>
+                        <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputError2Status" class="sr-only">(error)</span>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                        </div>
+                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                        <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="margin-bottom-medium text-left">
+                        <h3 class="page-header text-weight-300">Optional icons in horizontal and inline forms</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <form class="form-horizontal">
+                        <div class="form-group has-success has-feedback">
+                            <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputSuccess3Status" class="sr-only">(success)</span>
+                            </div>
+                        </div>
+                        <div class="form-group has-success has-feedback">
+                            <label class="control-label col-sm-3" for="inputGroupSuccess2">Input group with success</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon">@</span>
+                                    <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                                </div>
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <form class="form-inline">
+                        <div class="form-group has-success has-feedback">
+                            <label class="control-label" for="inputSuccess4">Input with success</label>
+                            <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span id="inputSuccess4Status" class="sr-only">(success)</span>
+                        </div>
+                    </form>
+                    <form class="form-inline">
+                        <div class="form-group has-success has-feedback">
+                            <label class="control-label" for="inputGroupSuccess3">Input group with success</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">@</span>
+                                <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+                            </div>
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="margin-bottom-medium text-left">
+                        <h3 class="page-header text-weight-300">Control sizing</h3>
+                        <p class="text-black">Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-lg" type="text" placeholder=".input-lg">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Default input">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-sm" type="text" placeholder=".input-sm">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control input-lg">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control input-sm">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="margin-bottom-medium text-left">
+                        <h3 class="page-header text-weight-300">Horizontal form group sizes</h3>
+                        <p class="text-black">Quickly size labels and form controls within <code>.form-horizontal</code> by adding <code>.form-group-lg</code> or <code>.form-group-sm</code>.</p>
+                    </div>
+                    <form class="form-horizontal">
+                        <div class="form-group form-group-lg">
+                            <label class="col-sm-3 control-label" for="formGroupInputLarge">Large label</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
+                            </div>
+                        </div>
+                        <div class="form-group form-group-sm">
+                            <label class="col-sm-3 control-label" for="formGroupInputSmall">Small label</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="margin-bottom-medium text-left">
+                        <h3 class="page-header text-weight-300">Control sizing</h3>
+                        <p class="text-black">Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <input type="text" class="form-control" placeholder=".col-xs-2">
+                        </div>
+                        <div class="col-xs-3">
+                            <input type="text" class="form-control" placeholder=".col-xs-3">
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" placeholder=".col-xs-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                                <div class="counternumber text-weight-300 animate margin-top-small margin-bottom-small slideUp"
+                                    data-animation="slideUp" data-from="0" data-to="1400" data-speed="1500">
+                                    1400
+                                </div>
+                                <div class="separator">
+                                    <i class="short-line"></i><i class="fa fa-circle-o"></i><i
+                                        class="fa fa-circle"></i><i class="fa fa-circle-o"></i><span
+                                        class="short-line"></span>
+                                </div>
+                                <p>Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="counter-number">
+                                <i class="fa fa-trophy text-size-40px"></i>
+                                <div class="counternumber text-weight-300 animate margin-top-small margin-bottom-small slideUp"
+                                    data-animation="slideUp" data-from="0" data-to="80" data-speed="1500">
+                                    80
+                                </div>
+                                <div class="separator">
+                                    <i class="short-line"></i><i class="fa fa-circle-o"></i><i
+                                        class="fa fa-circle"></i><i class="fa fa-circle-o"></i><span
+                                        class="short-line"></span>
+                                </div>
+                                <p>Awards Won</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock %}
